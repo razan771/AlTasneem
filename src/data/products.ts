@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: '1',
+    name: 'مقوي المفاصل المتقدم',
+    description: 'مكمل غذائي عالي الجودة يحتوي على الجلوكوزامين والكوندرويتين لدعم المفاصل والقدرة على التحمل.',
+    price: 45.99,
+    image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80',
+    category: 'المكملات الغذائية',
+    forPet: 'هجن السباق',
+  },
+  {
+    id: '2',
+    name: 'قطرات مكافحة الطفيليات',
+    description: 'علاج موضعي شهري يقضي على القراد والطفيليات بفعالية وأمان.',
+    price: 32.50,
+    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80',
+    category: 'مكافحة الطفيليات',
+    forPet: 'الإبل والحيران',
+  },
+  {
+    id: '3',
+    name: 'معجون الطاقة والتحمل',
+    description: 'تركيبة بيطرية سريعة الامتصاص لتعزيز الطاقة وتقليل الإجهاد أثناء سباقات الهجن.',
+    price: 28.00,
+    image: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80',
+    category: 'فيتامينات',
+    forPet: 'هجن السباق',
+  },
+  {
+    id: '4',
+    name: 'زيوت الأوميغا بلس للشعر',
+    description: 'زيوت طبيعية غنية بأحماض أوميغا 3 لدعم صحة الجلد وجمال الوبر.',
+    price: 22.99,
+    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80',
+    category: 'المكملات الغذائية',
+    forPet: 'جميع الإبل',
+  }
+];
