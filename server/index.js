@@ -13,6 +13,10 @@ app.use(express.json());
 
 initDb().then(() => console.log('Database initialized successfully.')).catch(console.error);
 
+app.get('/', (req, res) => {
+  res.send('Al-Tasneem Veterinary Pharmacy API is running! 🚀');
+});
+
 // ----------------- Auth Middlewares -----------------
 function verifyToken(req, res, next) {
   const bearerHeader = req.headers['authorization'];

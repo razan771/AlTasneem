@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "https://altasneem.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://altasneem.onrender.com/api";
 
 export const api = {
   getProducts: async () => {
