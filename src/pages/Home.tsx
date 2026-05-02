@@ -44,36 +44,38 @@ export function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative px-4 py-10 md:py-8 sm:px-6 lg:px-8 mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8 lg:gap-16 h-auto min-h-[calc(100dvh-80px)] w-full overflow-hidden md:overflow-visible">
+      <section className="relative px-4 py-10 md:py-8 sm:px-6 lg:px-8 mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-center gap-10 md:gap-8 lg:gap-16 h-auto min-h-[calc(100vh-6rem)] w-full overflow-hidden md:overflow-visible">
         <div className="flex-1 text-center md:text-start z-10 flex flex-col justify-center">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6 md:mb-8 leading-[1.3] md:leading-[1.2] text-on-surface/90">
-            التسنيم
-            <span className="block text-xl sm:text-2xl md:text-4xl lg:text-5xl mt-4 md:mt-6 text-gradient-primary leading-normal pb-4">رعاية بيطرية متطورة للهجن والحيوانات الأليفة.</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black tracking-tight mb-6 md:mb-8 leading-[1.3] md:leading-[1.2] text-on-surface">
+            رعاية بيطرية متكاملة
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-4 md:mt-6 text-gradient-primary leading-normal pb-4 font-bold">لجميع الحيوانات</span>
           </h1>
           <p className="font-body text-base sm:text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto md:mx-0 mb-8 md:mb-10 leading-relaxed tracking-wide">
             رعاية صحية مختارة بخبرة ومصممة لضمان صحة وقوة هجنك ورفاهية حيواناتك الأليفة، ضمن بيئة طبية متكاملة.
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4">
             <NavLink to="/pharmacy">
-              <Button className="text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 shadow-ambient tracking-wide">تسوق من الصيدلية</Button>
+              <Button className="text-base sm:text-lg px-8 py-4 shadow-float tracking-wide">تصفح المنتجات</Button>
             </NavLink>
-            <Button variant="secondary" className="text-base sm:text-lg px-6 py-3 sm:px-8 sm:py-4 tracking-wide">استشارة طبية</Button>
+            <Button variant="secondary" className="text-base sm:text-lg px-8 py-4 tracking-wide shadow-soft">استشارة طبية</Button>
           </div>
         </div>
         <div className="flex-1 relative w-full flex justify-center md:justify-end items-center mt-6 md:mt-0">
-          <div className="relative w-full max-w-[260px] sm:max-w-[340px] lg:max-w-[420px] isolate">
+          <div className="relative w-full max-w-[260px] sm:max-w-[340px] lg:max-w-[440px] isolate">
             {/* Background Dog Image - Layer 1 (Back top right) */}
-            <div className="hidden md:block absolute -z-20 -top-6 -right-6 lg:-top-10 lg:-right-14 w-2/3 aspect-[4/5] overflow-hidden rounded-[40px_10px_40px_10px] shadow-ambient opacity-[0.85] blur-[1px] rotate-6 transform transition-transform hover:rotate-3 duration-500">
+            <div className="hidden md:block absolute -z-20 -top-6 -right-6 lg:-top-10 lg:-right-14 w-2/3 aspect-[4/5] overflow-hidden rounded-[2rem_0.5rem_2rem_0.5rem] shadow-ambient opacity-[0.6] blur-sm rotate-6 transform transition-transform hover:rotate-3 duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10 mix-blend-overlay" />
               <img src="/images/hero-dog.png" alt="Clinical Dog Sanctuary" className="object-cover w-full h-full" />
             </div>
 
             {/* Background Cat Image - Layer 2 (Back bottom left) */}
-            <div className="hidden md:block absolute -z-10 -bottom-6 -left-6 lg:-bottom-12 lg:-left-12 w-3/5 aspect-[4/5] overflow-hidden rounded-[20px_40px_20px_40px] shadow-ambient opacity-[0.9] rotate-[-8deg] blur-[0.5px] transform transition-transform hover:rotate-[-4deg] duration-500">
+            <div className="hidden md:block absolute -z-10 -bottom-6 -left-6 lg:-bottom-12 lg:-left-12 w-3/5 aspect-[4/5] overflow-hidden rounded-[1rem_2rem_1rem_2rem] shadow-ambient opacity-[0.7] rotate-[-8deg] blur-[2px] transform transition-transform hover:rotate-[-4deg] duration-500">
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent z-10 mix-blend-overlay" />
               <img src="/images/hero-cat.png" alt="Clinical Cat Sanctuary" className="object-cover w-full h-full" />
             </div>
 
             {/* Foreground Camel Image - Main Focal Point */}
-            <div className="relative z-10 aspect-[4/5] overflow-hidden rounded-[40px_10px_40px_10px] md:rounded-[80px_20px_80px_20px] bg-surface-container-low shadow-xl md:shadow-[0_20px_60px_rgba(0,31,42,0.15)] ring-1 ring-white/40">
+            <div className="relative z-10 aspect-[4/5] overflow-hidden rounded-[2rem_0.5rem_2rem_0.5rem] md:rounded-3xl bg-surface-container-low shadow-float ring-1 ring-white/40">
               <img
                 src="/images/hero-camel.png"
                 alt="Premium Camel Racing at Sunset"
@@ -81,7 +83,7 @@ export function Home() {
               />
             </div>
             {/* Decorative elements behind */}
-            <div className="hidden md:block absolute -z-30 top-8 -left-8 lg:top-12 lg:-left-12 w-full h-full rounded-[80px_20px_80px_20px] border border-outline-variant/30"></div>
+            <div className="hidden md:block absolute -z-30 top-8 -left-8 lg:top-12 lg:-left-12 w-full h-full rounded-3xl border border-outline-variant/30"></div>
           </div>
         </div>
       </section>

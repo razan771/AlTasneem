@@ -12,7 +12,7 @@ export function Header({ cartCount, onOpenCart }: HeaderProps) {
   const { user } = useAuth();
 
   return (
-    <header className="sticky top-0 z-40 glass shadow-[0_1px_0_rgba(0,0,0,0.05)] border-b-0">
+    <header className="sticky top-0 z-40 glass shadow-sm border-b border-outline-variant/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
 
@@ -20,7 +20,7 @@ export function Header({ cartCount, onOpenCart }: HeaderProps) {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center gap-3 group">
               <Stethoscope className="text-primary group-hover:scale-110 transition-transform h-9 w-9" />
-              <span className="font-display font-extrabold text-3xl text-gradient-primary tracking-tight">
+              <span className="font-display font-black text-4xl text-gradient-primary tracking-tight">
                 التسنيم
               </span>
             </NavLink>
@@ -31,7 +31,7 @@ export function Header({ cartCount, onOpenCart }: HeaderProps) {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `text-xl font-bold font-body tracking-wide hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-on-surface'
+                `text-xl lg:text-2xl font-bold font-body tracking-wide hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-on-surface'
                 }`
               }
             >
@@ -41,7 +41,7 @@ export function Header({ cartCount, onOpenCart }: HeaderProps) {
             <NavLink
               to="/pharmacy"
               className={({ isActive }) =>
-                `text-xl font-bold font-body tracking-wide hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-on-surface'
+                `text-xl lg:text-2xl font-bold font-body tracking-wide hover:text-primary transition-colors ${isActive ? 'text-primary' : 'text-on-surface'
                 }`
               }
             >

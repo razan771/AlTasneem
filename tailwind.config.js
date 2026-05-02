@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Manrope', 'Cairo', 'sans-serif'],
-        body: ['Tajawal', '"Plus Jakarta Sans"', 'sans-serif'],
+        display: ['Cairo', 'sans-serif'],
+        body: ['Tajawal', 'sans-serif'],
       },
       colors: {
         primary: '#00666c',
@@ -43,10 +43,14 @@ export default {
       },
       borderRadius: {
         'md': '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
         'full': '9999px',
       },
       boxShadow: {
-        'ambient': '0 12px 40px rgba(0, 31, 42, 0.06)',
+        'ambient': '0 12px 40px rgba(0, 31, 42, 0.04)',
+        'soft': '0 4px 20px rgba(0, 31, 42, 0.05)',
+        'float': '0 20px 40px rgba(0, 31, 42, 0.08)',
       }
     },
   },
